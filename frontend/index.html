@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minecraft Paintings API</title>
+</head>
+<body>
+
+<p>
+    Consumo de REST-API de Paintings
+</p>
+
+<div>
+    <label>Name </label>
+    <input type="text" id="name">
+</div>
+
+<div>
+    <label>Image URL </label>
+    <input type="text" id="image_url">
+</div>
+
+<div>
+    <label>Width </label>
+    <input type="text" id="width">
+</div>
+
+<div>
+    <label>Height </label>
+    <input type="text" id="height">
+</div>
+
+<div>
+    <label>Artist </label>
+    <input type="text" id="artist">
+</div>
+
+<div>
+    <label>Game Version </label>
+    <input type="text" id="game_version">
+</div>
+
+<button onclick="postPainting()"> POST Painting </button>
+<button onclick="getPaintings()"> GET Paintings </button>
+
+<div id="resultado"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="callrestapi.js"></script>
+
+</body>
+</html>
